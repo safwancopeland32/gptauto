@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap&font-display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --app-background-color: #83ebc8;
+  --app-fade-color: #97ebcf;
+  --segment-background-color: #ffffff;
+  --insignificant-color: #ffff;
+
+  --text-color: #000000;
+  --output-segment-bg-color: #080c14c0;
+  --output-segment-border-color: #999e;
+}
+
+.dark-mode {
+  --app-background-color: #111111;
+  --app-fade-color: #1a1c25;
+  --segment-background-color: #080c14c0;
+  --insignificant-color: #fff;
+
+  --text-color: #ffffff;
+  --output-segment-bg-color: #080c14c0;
+  --output-segment-border-color: #fffe;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.TheHeader.css-hml7yl {
+    display: none;
+}
+
+
+.centered-image {
+margin:0 auto;
+        width: 220px;
+        padding-top:15px;
+      }
+
+#centered-image {
+  position: absolute;
+              width: 100%;
+              z-index: 1000;
+              background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.13) 87%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(87%, rgba(0,0,0,0.13)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.13) 87%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.13) 87%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.13) 87%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.13) 87%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+            height: 80px;
+              top:0;
+            }
+      span.OutputCommandHeadingBox.glass.withFadeInAnimation.css-r3iuwq {
+    display: none;
+}
+button.chakra-button.css-qfuuhm {
+    background: #E9FE53;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    border: 0px solid #000000;
+}
+button.chakra-button.css-q2q3cj {
+  background: #6d737d;
+  font-weight: 700;
+  opacity: 0.5;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  border: 0px solid #000000;
+}
+.AppBackground {
+  background-color: var(--app-background-color);
+  box-shadow: inset 0 0 256px 0 #0008, inset 0 0 32px 0 #0088;
+  transition: background-color 0.17s ease-out !important;
+}
+
+.OutputSegmentBox {
+  background-color: var(--segment-background-color);
+  transition: background-color 0.17s ease-out !important;
+
+  border: 2px solid #fffe;
+  border: 1px solid #999e;
+  border-radius: 1rem;
+  padding: 20px 28px;
+  margin: 12px 0;
+
+  text-align: start;
+
+  overflow: hidden;
+}
+
+.OutputSegmentBox pre {
+  /* font-family: 'Azeret Mono', monospace !important; */
+  font-family: 'Overpass Mono', monospace !important;
+
+  /* color: white; */
+  font-size: 14px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  margin-bottom: 12px;
+
+  filter: brightness(1.2);
+  font-weight: bold;
+}
+
+.OutputCommandHeadingBox {
+  background: #ffd000;
+  border: 1px solid #999e;
+  overflow: hidden;
+}
+
+.OutputCommandHeadingBox > * {
+  animation-name: slide-right;
+  animation-duration: 0.47s;
+}
+
+.ScrollToBottomButton {
+  background-color: var(--insignificant-color) !important;
+}
+
+/* Add this to your CSS file */
+.TheFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding-left: 4px;
+  padding-right: 4px;
+  pointer-events: none;
+  background-color: var(--app-fade-color);
+}
+button.chakra-button.css-1ypr4n0 span {
+    color: #19202c !important;
+}
+button.chakra-button.css-1ypr4n0 {
+    background: #23ba63!important;
+}
+.TheFooter:before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 100% 100px;
+  background: linear-gradient(to bottom, #fff0 0%, var(--app-fade-color) 100%);
+}
+
+.FancyBox {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 6px 16px 0 #0005;
+  animation-name: pop-in;
+  animation-duration: 0.47s;
+  animation-timing-function: ease-out;
+}
+
+.glass {
+  backdrop-filter: blur(8px);
+}
+
+.withShadow {
+  box-shadow: 0 6px 16px 0 #0045;
+}
+
+.withSmallShadow {
+  box-shadow: 0 3px 8px 0 #0002;
+}
+
+.fancyFont {
+  font-family: 'pragmatapro-fraktur', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  pointer-events: all;
+}
+
+.CommandStip {
+  background-image: linear-gradient(180deg, #455555, #546464);
+  color: #fffd;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000, 0 0 8px #0009;
+  border: 1px solid #0004;
+  transition: background-color 0.2s ease-in-out,
+    background-image 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.CommandStip.continuous {
+  background: linear-gradient(180deg, #a51225, #861221);
+}
+
+.CommandStip.active {
+  background-color: #5ba828;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    #367a08 20px,
+    #367a08 40px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 3s linear infinite;
+}
+
+.CommandStip.active.continuous {
+  background-color: #a90f2e;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    Crimson 20px,
+    Crimson 40px
+  );
+}
+
+@keyframes barberpole {
+  100% {
+    background-position: -56.568px 0;
+  }
+}
+
+/******************************************************
+  *  CSS3 Pretty Scrollbar
+  ******************************************************/
+
+.pretty-scrollbar::-webkit-scrollbar-track {
+  background-color: #0001;
+}
+
+.pretty-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0000;
+}
+
+.pretty-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3336;
+}
+
+
+
+div#chakra-modal-\:rf\: {
+    background: #1f1f23!important;
+}
+section#chakra-modal-\:r4l\:, div#chakra-modal-\:r2p\:, section#chakra-modal-\:r1n\: {
+    background: #1f1f23 !important;
+}
+button.chakra-button.css-r7xd4a {
+    BACKGROUND: #E9FE53!important;
+}
+b {
+    font-size: 16px!important;
+    font-weight: 400!important;
+}
+span.css-11cuipc {
+    font-size: 14px!important;
+}
+code {
+    font-size: 14px!important;
+}
+.css-14ogjxt {
+width: 18px!important;;
+}
+img.chakra-image.css-0 {
+    width: 220px;
+    margin: 15px 0 0 8px;
+}
+h2.chakra-heading.css-18j379d {
+    text-transform: uppercase; font-size: 13px!important;
+    /* font-family: 'Inter', sans-serif; */
+    font-weight: 800!important;
+    padding-top: 20px!important;
+}
+.chakra-form-control.css-1r0dtde {
+    margin-top: 14px;
+}
+.chakra-ui-dark .css-d20ijl:not([data-theme]), [data-theme=dark] .css-d20ijl:not([data-theme]), .css-d20ijl[data-theme=dark] {
+    --alert-fg: #E9FE53 !important;
+    --alert-bg: #7b7f8e42 !important;
+}
+
+span {
+    color: #6599ba !important;
+    /* font-size: 13px; */
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+}
+button.chakra-button.css-m3oxyq {
+    background: #1F33C3;
+    color: WHITE;
+}
+.OutputSegmentBox {
+    border: 1px #494949 solid!important;
+    border-radius: 10px!important;
+}
+div#chakra-modal-\:r2p\: {
+    width: 35% !important;
+}
+.OutputSegmentBox pre {
+    /* font-family: 'Azeret Mono', monospace !important; */
+    font-family: 'Roboto', monospace !important;
+    font-size: 16px !important;
+    margin-bottom: 12px;
+    font-weight: 400 !important;
+}
+.FancyBox.css-tzw6du {
+    background: #cfc2b0 !important;
+}
+p.chakra-text.css-r40qfl {
+    color: black!important;
+}
+p.chakra-text.css-1uw0hzz, p.chakra-text.css-p8uejz {
+    color: black!important;
+}
+.css-puakc6 {
+
+    color: #7368C2!important;
+}
+svg.chakra-icon.css-onkibi {
+    color: white!important;
+}
+ss-1gqu05r {
+    BACKGROUND: #7877bf!important;
+}
+svg.chakra-icon.css-ibiez8 {
+    color: #8b6fea!important;
+    /* width: 28px!important; */
+}
+button.chakra-button.css-1syxlr9 {
+    background: #1f33c3!important;
+    color: white!important;
+}
+.FancyBox.css-1gqu05r {
+    background: #7474bc!important;
+}
